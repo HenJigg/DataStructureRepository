@@ -11,7 +11,9 @@ namespace DataStructureSlns
     {
         static void Main(string[] args)
         {
-            MyArrayListTest();
+            //MyArrayListTest();
+
+            MyLinkedListTest();
 
             Console.ReadKey();
         }
@@ -45,6 +47,24 @@ namespace DataStructureSlns
             }
 
             Console.WriteLine("------------------------");
+        }
+
+        static void MyLinkedListTest()
+        {
+            MyLinkedList linkedList = new MyLinkedList();
+
+            linkedList.Add("Microsoft");
+            linkedList.Add("Google");
+            linkedList.Add("Facebook");
+            linkedList.Add("Youtube");
+
+            linkedList.Insert(1, "TakeTwo");
+            linkedList.RemoveAt(4);
+
+            for (int i = 0; i < linkedList.Count; i++)
+            {
+                Console.WriteLine(linkedList[i].ToString());
+            }
         }
     }
 }
