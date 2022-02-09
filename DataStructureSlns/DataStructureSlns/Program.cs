@@ -11,9 +11,8 @@ namespace DataStructureSlns
     {
         static void Main(string[] args)
         {
-            //MyArrayListTest();
-
-            MyLinkedListTest();
+            //MyArrayListTest(); 
+            //MyLinkedListTest();
 
             Console.ReadKey();
         }
